@@ -10,7 +10,6 @@
     this.hourlyTotal = function() {
       var custPerHour = Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1) + this.minCustomers);
       return Math.floor(custPerHour * this.avgPurchase);
-
     }
   }
 
@@ -28,8 +27,6 @@
        table.appendChild(titleRow);
       }
     }
-
-
 
    Shop.prototype.makeTable = function() {
     var total, newRow, newData, newText, table;
@@ -64,13 +61,24 @@
     locations.push(wedgewood = new Shop("Wedgewood", 2, 28, 1.25));
     locations.push(ballard = new Shop("Ballard", 8, 58, 3.75));
 
-console.log(downtown.hourlytotal);
-
   makeHeaders();
-  downtown.makeTable();
-  capHill.makeTable();
-  slu.makeTable();
-  wedgewood.makeTable();
-  ballard.makeTable();
+
+  for (var j = 0; j< locations.length; j++) {
+    locations[j].makeTable();
+   }
+
+  var createNewShop = function(e) {
+    e.preventDefault();
+    var inputShopName = document.getElementById('shop-name').value;
+    var inputMinCust = document.getElementById('min-cust').value;
+    var inputMaxCust = document.getElementById('max-cust').value;
+    var inputAvgPurch = document.getElementById('avg-purch').value;
+    var newLocation = new Shop(inputShopName, inputMinCust, inputMaxCust, inputAvgPurch);
+    locations.push(newLocation);
+    newLocation.makeTable();
+   }
+
+  var el = document.getElementById('input-button');
+  el.addEventListener('click', createNewShop, false);
 
   } ());
