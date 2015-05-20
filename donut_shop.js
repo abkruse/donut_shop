@@ -50,7 +50,8 @@
 
     newData = document.createElement('td');
     newText = document.createTextNode(total);
-    newData.appendChild(newText);
+    newData.appendChild(newText)
+    newRow.appendChild(newData);
     table.appendChild(newRow);
    }
 
@@ -82,3 +83,5 @@
   el.addEventListener('click', createNewShop, false);
 
   } ());
+
+//Colin gave me the idea for the flow makeTable method during the team whiteboard section on Tuesday.
