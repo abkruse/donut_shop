@@ -7,62 +7,66 @@ h1 {
   color: #0B2A31;
   border: 2px solid #005869;
   border-radius: 10px;
-  padding: 5px;
-}
+  padding: 5px;}
+
 .header {
   background-color: #23E2CB;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
-
-
-}
+  border-radius: 10px; }
 
 p {
-  font-family: 'Cabin', sans-serif;
+ font-family: 'Droid Sans', sans-serif;
+  letter-spacing: .02em}
+
+strong {
+  font-weight: black;
+  font-size: 100%;
 }
+
 .info {
-  text-align: center;
-}
+  text-align: center;}
+
 form {
-  text-align: center;
-}
+  text-align: center; }
+
 .form-data {
-  width: 50px;
-}
+  width: 50px; }
+
 #shop-name {
-  width: 150px;
-}
+  width: 150px; }
+
 #input-button {
   background-color: #AAD5D0;
   font-family: 'Cabin', sans-serif;
   border-radius: 100px;
+  width: 45px;
+  height: 45px; }
 
-}
-#input-button:active {
-  background-color: #005869;
-  color: #23E2CB;
-}
+#input-button:hover {
+  background-color: white;
+  background-image: url(donut.png);
+  color: rgba(255, 255, 255, 0);}
+
 
 table {
   font-family: 'Cabin', sans-serif;
   font-size: 125%;
   margin-right: auto;
-  margin-left: auto;
-}
+  margin-left: auto; }
+
 table:hover {
-  background-color: #23E2CB;
-}
+  background-color: #23E2CB; }
+
 tr:nth-child(odd) {
-  background-color: #AAD5D0;
-  }
+  background-color: #AAD5D0; }
+
 tr:nth-child(even) {
-  background-color: #F0EBE7;
-  }
+  background-color: #F0EBE7; }
+
 tr:hover {
-  background-color: white;
-   }
+  background-color: white; }
 
 
 
