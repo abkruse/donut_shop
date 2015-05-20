@@ -5,21 +5,31 @@
     <title>Top Pot Donut Shop Totals</title>
     <meta description="count donut hourly totals">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Cabin|Cabin+Sketch:700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1 align="center">Top Pot Donut Counter</h1>
+    <section class="header">
+      <h1 align="center">Top Pot Donut Counter</h1>
+    </section>
+    <section>
+      <p class="info">
+        <strong>This table and page tabulate the hourly donut sales at Top Pot locations around the area.You can even update the table with new shops!</strong>
+      </p>
+      <br />
+    </section>
       <form>
         <p>Location name:
-         <input type="text" id="shop-name">
-        Minimun customers per hour:
-          <input type="text" id="min-cust">
+         <input type="text" class="form-data" id="shop-name">
+        Minimum customers per hour:
+          <input type="text" class="form-data" id="min-cust">
         Maximum customers per hour:
-          <input type="text" id="max-cust">
+          <input type="text" class="form-data" id="max-cust">
         Avgerage customer purchase:
-          <input type="text" id="avg-purch">
+          <input type="text" class="form-data" id="avg-purch">
         </p>
         <p>
-        <input id = "input-button" type="submit" value="Submit"/>
+        <input id = "input-button" type="submit" value="Add"/>
       </p>
       </form>
     <table id = "donut-table">
