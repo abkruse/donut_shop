@@ -77,6 +77,11 @@
     var newLocation = new Shop(inputShopName, inputMinCust, inputMaxCust, inputAvgPurch);
     locations.push(newLocation);
     newLocation.makeTable();
+
+    document.getElementById('shop-name').value = '';
+    document.getElementById('min-cust').value = '';
+    document.getElementById('max-cust').value = '';
+    document.getElementById('avg-cust').value = '';
    }
 
   var el = document.getElementById('input-button');
