@@ -45,7 +45,7 @@ form {
   height: 40px; }
 
 #input-button:hover {
-  background-color: white;
+  background-color: #f7f7df;
   background-image: url(donut.png);
   color: rgba(255, 255, 255, 0);
   border: 0;}
