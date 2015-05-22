@@ -87,6 +87,24 @@
   var el = document.getElementById('input-button');
   el.addEventListener('click', createNewShop, false);
 
+  var goForDonut = function(e) {
+    var getDonutMessage = "Let's go get one!";
+    var wantDonutMessage = document.getElementById('want-donut');
+    wantDonutMessage.textContent = getDonutMessage;
+  }
+
+  var donutEl = document.getElementById('want-donut');
+  donutEl.addEventListener('mouseover', goForDonut, false);
+
+  var noDonut = function(e) {
+    var noDonutMessage = "Great. Now I want a donut.";
+    var noWantDonutMessage = document.getElementById('want-donut');
+    noWantDonutMessage.textContent = noDonutMessage;
+  }
+
+  var noDonutEl = document.getElementById('want-donut');
+  noDonutEl.addEventListener('mouseout', noDonut, false);
+
   } ());
 
 //Colin gave me the idea for the flow makeTable method during the team whiteboard section on Tuesday.

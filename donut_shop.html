@@ -6,36 +6,40 @@
     <meta description="count donut hourly totals">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Cabin|Cabin+Sketch:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <section class="header">
-      <h1 align="center">Top Pot Donut Counter</h1>
+    <section class="background">
+      <img src="donut_bag.jpg">
     </section>
-    <section>
-      <p class="info">
-        <strong>This table and page tabulate the hourly donut sales at Top Pot locations around the area.You can even update the table with new shops!</strong>
-      </p>
+    <main>
+      <section class="header">
+        <h1 align="center">Top Pot Donut Counter</h1>
+      </section>
+      <table id = "donut-table">
+      </table>
       <br />
-    </section>
-      <form>
-        <p>Location name:
-         <input type="text" class="form-data" id="shop-name">
-        Minimum customers per hour:
-          <input type="text" class="form-data" id="min-cust">
-        Maximum customers per hour:
-          <input type="text" class="form-data" id="max-cust">
-        Average customer purchase:
-          <input type="text" class="form-data" id="avg-purch">
-        </p>
-        <p>
-        <input id = "input-button" type="submit" value="Add"/>
+  </main>
+    <form>
+      <h2>Adding a New Location?</h2>
+      <p>Location name:
+       <input type="text" class="form-data" id="shop-name">
+     Min. customers per hour:
+        <input type="text" class="form-data" id="min-cust">
+      Max. customers per hour:
+        <input type="text" class="form-data" id="max-cust">
+      Average customer purchase:
+        <input type="text" class="form-data" id="avg-purch">
       </p>
-      </form>
-    <table id = "donut-table">
-    </table>
+      <p>
+      <input id = "input-button" type="submit" value="Add"/>
+    </p>
+    </form>
+  <aside>
+    <button><a href="http://www.toppotdoughnuts.com/cafe-info.html" id = "want-donut">Great. Now I want a donut.</a></button>
+  </aside>
   <script type="text/javascript" src="donut_shop.js"></script>
-
+  <footer>This table and page tabulate the hourly donut sales at Top Pot locations around the area. Add new shop locations in the provided section.</footer>
  </body>
 </html>
