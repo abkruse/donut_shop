@@ -41,10 +41,6 @@ a {
   text-decoration: none;
   color: white; }
 
-aside > button:hover {
-
-}
-
 main {
   position:relative;
   top: 10px;
@@ -88,6 +84,7 @@ table:hover {
 
 table:hover th {
   color: white; }
+
 
 tr:nth-child(odd) {
   background-color: #AAD5D0; }
