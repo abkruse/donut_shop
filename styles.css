@@ -73,14 +73,12 @@ table {
   position:relative;
   font-family: 'Roboto', sans-serif;
   font-size: 125%;
+  background-color: #04756F;
   margin-right: auto;
   margin-left: auto;
   width: 90%;
   color: #193441;
   overflow: scroll;}
-
-table:hover {
-  background-color: #04756F; }
 
 table:hover th {
   color: white; }
